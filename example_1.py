@@ -227,9 +227,9 @@ if __name__ == "__main__":
     
     
     # Step 5: Combine all individual result DwC CSVs into a single Parquet file
-    result_dfs = []
-    
     for csv_type in ["absolute", "relative"]:
+        result_dfs = []
+        
         for csv in os.listdir(OUTPUT_DIR):
             if not csv.endswith(f".{csv_type}.dwc.csv"):
                 continue
