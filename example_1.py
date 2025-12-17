@@ -2,10 +2,9 @@
 import io
 from mappings import Mappings
 from utils import *
-from time import sleep
 import pandas as pd
 
-ONLY_USE_CACHE = True # If True, only use cached data and do not make new requests
+ONLY_USE_CACHE = False # If True, only use cached data and do not make new requests
 # Note: to build partial cache (for testing), run first with this set to False, and 
 # comment out 'blocking' steps once you've gathered enought test data for that step (mgnify api calls)
 
